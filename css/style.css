@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header css  */
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+header{
+    background-color: #f9f9f9;
+}
+/* header css end */
+
+/* banner css start */
+
+.banner_section{
+    background-image: url(../image/background-image.png);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner_section h1{
+
+    text-transform: uppercase;
+    font-size: 90px;
+    color: #fff;
+}
+.banner_section span{
+
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #15a4fa;
+}
+.banner_section p{
+
+    margin: 0;
+    margin: 30px 0;
+    color: #fff;
+}
+.btn-action{
+
+    color: #fff;
+    background-color: transparent;
+    padding: 0;
+    padding: 10px 25px;
+    border: 1px solid #15a4fa;
+    text-transform: capitalize;
+    transition: .4s all ease ease-in-out;
+}
+.hg{
+    min-height: 90vh;
+}
+.btn-action:hover{
+    border: 1px solid #15a4fa;
+    background-color: mediumspringgreen;
+    color:rgb(98, 21, 100);
+
+}
+.icon{
+    
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: updown 1s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        top: 80%;
+    }
+    100%{
+        top: 90%;
+    }
+}
+/* banner css end */
+.simple{
+
+    background-color: #f0f0f0;
+}
+.simple h1{
+    
+   
+    font-size: 50px;
+    color: #2d3950;
+}
+.simple p{
+    
+    color: #999999;
+}
+.feature{
+
+}
+.feature h4{
+    
+    color: #2d3950;
+}
+.feature p{
+    
+    color: #2d3950;
+}
+.icon-box{
+
+    width: 80px;
+    height: 80px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+    background: #48baff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+    margin: auto;
+    font-size: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.icon-box i{
+    
+}
+/* main body css start */
+
+.picture{
+    position: relative;
+}
+.picture::before{
+    position: absolute;
+    content: '';
+    bottom: 0%;
+    right: 0%;
+    width: 0%;
+    height: 0%;
+    background-color: aqua;
+    opacity: .5;
+    transition: .7s all ease-in-out;
+}
+.picture:hover::before{
+    width: 100%;
+    height: 100%;
+
+}
+.icon_list{
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .7s all ease-in-out;
+}
+.icon_list ul{
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.icon_list ul li{
+    
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fb7d7d;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 5px;
+    color: #716b6b;
+    border-radius: 5px;
+}
+.icon_list ul li i{
+    
+}
+.picture:hover .icon_list{
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+}
+/* main body css end */
+/* footer css start */
+
+
+/* footer css end */
